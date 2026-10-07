@@ -15,7 +15,8 @@
         </nav>
         <form class="search-form" action="#" method="GET">
             <input type="text" name="query" placeholder="Пошук модів...">
-            <button type="submit">Знайти</button>
+            <!-- Додано ID для селектора ідентифікатора -->
+            <button type="submit" id="search-btn">Знайти</button>
         </form>
     </header>
 
@@ -26,8 +27,14 @@
         <div class="content-wrapper">
             <aside class="sidebar">
                 <h2>Категорії</h2>
-                <ul>
-                    <li>Інтерфейс</li>
+                <!-- Багаторівневий список -->
+                <ul class="category-list">
+                    <li>Інтерфейс
+                        <ul class="sub-category">
+                            <li>Міні-карта</li>
+                            <li>Інвентар</li>
+                        </ul>
+                    </li>
                     <li>Геймплей</li>
                     <li>Графіка</li>
                     <li>Звук</li>
@@ -120,4 +127,3 @@
     </footer>
 </body>
 </html>
-  
